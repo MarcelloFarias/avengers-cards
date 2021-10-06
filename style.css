@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    flex-direction: column;
+    max-width: 350px;
+    height: 50vh;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.card.captain-america {
+    box-shadow: 5px 10px 20px #0a5aaa;
+    animation: bounceInLeft;
+    animation-duration: 1s;
+}
+
+.card.card.iron-man {
+    box-shadow: 5px 10px 20px #aa0505;
+    animation: bounceInDown;
+    animation-duration: 1s;
+}
+
+.card.thor {
+    box-shadow: 5px 10px 20px #fadf7f;
+    animation: bounceInRight;
+    animation-duration: 1s;
+}
+
+.card img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    position: relative;
+    bottom: 5px;
+}
+
+.card.captain-america h2 {
+    color: #0a5aaa;
+}
+
+.card.iron-man h2 {
+    color: #aa0505;
+}
+
+.card.thor h2 {
+    color: #fadf7f;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #444444;
+}
+
+.btn {
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 0.6rem;
+    border-radius: 40px;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.btn.btn-captain {
+    background: #0a5aaa;
+}
+
+.btn.btn-captain:hover {
+    transform: translateY(-10px);
+    letter-spacing: 1px;
+}
+
+.btn.btn-ironMan {
+    background: #aa0505;
+}
+
+.btn.btn-ironMan:hover {
+    transform: translateY(-10px);
+    letter-spacing: 1px;
+}
+
+.btn.btn-thor {
+    background: #fadf7f;
+    color: #444444;
+}
+
+.btn.btn-thor:hover {
+    transform: translateY(-10px);
+    letter-spacing: 1px;
+}
+
+@media (max-width: 370px) {
+    .card {
+        height: 65vh;
+        max-width: 300px;
+    }
+}
